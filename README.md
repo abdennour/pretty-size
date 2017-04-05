@@ -3,7 +3,8 @@
 
 # Overview :
 
-Still under development. It is not yet mature. Thank you for your understanding!
+Display human readable file size .
+
 
 # Install
 
@@ -14,6 +15,20 @@ npm install pretty-size --save;
 # Example :
 
 ```js
+const {prettySize} = require('pretty-size');
+// import {prettySize} from 'pretty-size'; // ES6/ES7
+
+prettySize(454434343)
+  //'433.4 MiB'
+prettySize(454434343,true)
+  //'454.4 MB'
+prettySize(134343,true)
+  //'134.3 kB'
+prettySize(1024*1024)
+  //'1.0 MiB'
+prettySize(1024*1024*1024*1024,true)
+  //'1.1 TB'
+prettySize(1024*1024*1024*1024,false)
 
 ```
 

@@ -1,7 +1,7 @@
 {
   "name": "pretty-size",
   "version": "0.0.1",
-  "description": "Still under development. It is not yet mature. Thank you for your understanding!",
+  "description": "Display human readable file size .",
   "main": "index.js",
   "scripts": {
     "compile": "babel -d lib/ src/   --no-comments",
